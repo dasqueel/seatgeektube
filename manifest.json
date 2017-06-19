@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "SeatGeekTube",
+  "description": "Check if youtube artist playing in area.",
+  "version": "0.0.0.1",
+  "content_scripts":[
+     {
+        "matches":[
+           "<all_urls>"
+        ],
+        "js":[
+           "cs.js"
+        ]
+     }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "http://*/*",
+    "https://*/*",
+    "tabs",
+    "activeTab"
+  ],
+  "web_accessible_resources":[
+     "icon.png"
+  ]
+}
