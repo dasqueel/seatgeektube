@@ -3,6 +3,12 @@
   "name": "SeatGeekTube",
   "description": "Check if youtube artist playing in area.",
   "version": "0.0.0.1",
+  "background": {
+    "scripts": [
+      "bg.js"
+      ],
+    "persistent": false
+  },
   "content_scripts":[
      {
         "matches":[
@@ -18,8 +24,8 @@
     "default_popup": "popup.html"
   },
   "permissions": [
-    "http://*/*",
-    "https://*/*",
+    "http://neilbarduson.com/*",
+    "https://neilbarduson.com/*",
     "tabs",
     "activeTab"
   ],
