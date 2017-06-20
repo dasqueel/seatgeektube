@@ -18,15 +18,18 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) { // onUpdate
                         xhr.onreadystatechange = function() {
                           if (xhr.readyState == 4) {
                             //do notificatin update
-                            //console.log(xhr.responseText);
+                            console.log(xhr.responseText);
+                            if (xhr.responseText !== 'couldnt find url for tickets') {
+                                //console.log("inside if");
+                                chrome.extension.onConnect.addListener(function(port) {
+                                     //console.log("Connected .....");
+                                     port.onMessage.addListener(function(msg) {
+                                          port.postMessage(xhr.responseText);
+                                     });
+                                })
+                                chrome.browserAction.setBadgeText({text: "!!"});
+                            }
 
-                            chrome.extension.onConnect.addListener(function(port) {
-                                 //console.log("Connected .....");
-                                 port.onMessage.addListener(function(msg) {
-                                      port.postMessage(xhr.responseText);
-                                 });
-                            })
-                            chrome.browserAction.setBadgeText({text: "!!"});
                           }
                         }
 

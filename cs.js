@@ -19,6 +19,11 @@ port.postMessage("connect to background");
 //listener to update popup html with the tickets url
 port.onMessage.addListener(function(msg) {
      //console.log("message recieved" + msg);
-     document.getElementById("urls").innerText = "Get Cho Tickets :D!";
-     document.getElementById("urls").setAttribute('href', msg);
+     document.getElementById("urls").innerHTML = "<a href="+msg+" target='_blank'>Get Cho Tickets :D!</a>";
 });
+
+//whenever popup.html intiated, clear the notification
+window.onload = function() {
+    chrome.browserAction.setBadgeText({text: ""});
+    //possibly figure out how to remove the get cho tickets text after user clicks on link?
+};
