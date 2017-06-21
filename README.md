@@ -1,5 +1,4 @@
-[[https://github.com/username/repository/blob/master/img/octocat.png|alt=octocat]]
-
+![My image](https://chairnerd.global.ssl.fastly.net/images/sg-Spotlight.png)
 # seatgeektube
 while watching a music youtube video,
 
