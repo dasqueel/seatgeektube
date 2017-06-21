@@ -1,3 +1,5 @@
+[[https://github.com/username/repository/blob/master/img/octocat.png|alt=octocat]]
+
 # seatgeektube
 while watching a music youtube video,
 
