@@ -1,4 +1,4 @@
-![My image](https://chairnerd.global.ssl.fastly.net/images/sg-Spotlight.png)
+![My image](https://media.giphy.com/media/3oKIPwOqCkW4YwZDIA/giphy.gif)
 # seatgeektube
 while watching a music youtube video,
 
