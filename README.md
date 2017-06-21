@@ -1,4 +1,4 @@
-![My image](https://media.giphy.com/media/3oKIPwOqCkW4YwZDIA/giphy.gif)
+![My image](http://imgur.com/a/ewxlG)
 # seatgeektube
 while watching a music youtube video,
 
